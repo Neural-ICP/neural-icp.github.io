@@ -27,8 +27,8 @@ h2 {
 }
 
 figure {
-  margin-left:-70px;
-  margin-right:-70px;
+  margin-left:-100px;
+  margin-right:-100px;
   margin-top:-80px;
   margin-bottom:-20px;
 }
@@ -58,7 +58,6 @@ h3 {
   margin-top: 30px;
   margin-bottom: 10px;
   border-bottom: 1px solid #999;
-
 }
 
 
@@ -163,7 +162,7 @@ p {
 }
 .container {
   margin-top: 10px;
-  width:70%;
+  width:80%;
 }
 #footer {
   margin-bottom: 100px;
