@@ -134,12 +134,16 @@ Aligning a template to 3D human point clouds is a long-standing problem crucial 
 <br />
 
 </div>
-<div style='text-align:center'>
+<div style='text-align:center;'>
+
 <h2>How does NICP work?</h2>
 <hr>
 
 <br />
+
 <img src="images/method.png" style="vertical-align: top; width=100%; max-width:800px;">
+
+<br />
 
 NF for human registration. During training (top), the network learns to predict, for every query point in space (black dots), the ordered ground-truth offsets toward the template vertices (colored dots). At inference time (bottom), given a target shape, the template vertices locations are queried. The template vertices are then moved by applying the predicted ordered offsets to them. The process is iterated till convergence. Out-of-distribution data and ruined geometry often result trivial misalignment.
 
@@ -151,13 +155,13 @@ NF for human registration. During training (top), the network learns to predict,
 
 </div>
 
-<div style='text-align:center'>
+<div style='text-align:center;'>
 <h2>Registration Results</h2>
-
-We here show examples of human registration in a variety of settings including scans from RenderPeople, AXYZ, BUFF, FAUST, D-FAUST, SCAPE, LUMA, Twindom or SHREC19.
 
 <hr>
 <br />
+
+We here show examples of human registration in a variety of settings including scans from RenderPeople, AXYZ, BUFF, FAUST, D-FAUST, SCAPE, LUMA, Twindom or SHREC19.
 
 
 <div style="display: inline-block;text-align: center; margin:5px;">
@@ -171,7 +175,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_1_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -186,7 +190,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_2_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -201,7 +205,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_3_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -216,7 +220,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_4_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -231,7 +235,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_5_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -246,7 +250,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_6_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -261,7 +265,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_7_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -276,7 +280,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_8_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -291,7 +295,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_9_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -306,7 +310,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_10_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -321,7 +325,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_11_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -336,7 +340,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_12_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -351,7 +355,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_13_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -366,7 +370,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_14_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -381,7 +385,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_15_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -396,7 +400,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_16_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -411,7 +415,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_17_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -426,7 +430,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_18_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -441,7 +445,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_19_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -456,7 +460,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_20_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
@@ -471,7 +475,7 @@ We here show examples of human registration in a variety of settings including s
 </figure>
 <figure style='display: inline-block'>
 <img src="images/sample_22_colors.gif" style='vertical-align:top;height:240'></video>
-<figcaption><b>Semantic Correspondences</b></figcaption>
+<figcaption><b>Correspondences</b></figcaption>
 </figure>
 </div>
 
