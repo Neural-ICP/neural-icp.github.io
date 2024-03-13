@@ -142,7 +142,7 @@ In this work, we propose <b>NSR</b>, a pipeline that, for the first time, genera
 
 <br />
 
-<img src="images/method.png" style="vertical-align: top; width=100%; max-width:1000px;">
+<img src="images/NICP.png" style="vertical-align: top; width=100%; max-width:1000px;">
 
 <br />
 <br />
@@ -157,7 +157,7 @@ The key enabler of our generalization is NICP. <b>(1)</b>: At inference time, we
 </div>
 
 <div style='text-align:center;'>
-<h2>Registration Results</h2>
+<h2>Neural Scalabel Registration (NSR) Pipeline</h2>
 
 <hr>
 <br />
@@ -575,6 +575,44 @@ We here show examples of human registration in a variety of settings including s
 <br />
 <br />
 <br />
+
+<h2>NSR is the state-of-the-art tool for 3D Human Registration</h2>
+
+  <table>
+  <caption>
+    FAUST Challenge
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Method</th>
+      <th scope="col">INTRA</th>
+      <th scope="col">INTER</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Loopreg</th>
+      <td>1.35</td>
+      <td>2.66</td>
+    </tr>
+    <tr>
+      <th scope="row">Elementary</th>
+      <td>1.74</td>
+      <td>2.58</td>
+    </tr>
+    <tr>
+      <th scope="row">UD2E-Net</th>
+      <td>1.51</td>
+      <td>3.09</td>
+    </tr>
+    <tr>
+      <th scope="row"><b>NSR (Ours)</b></th>
+      <td>1.06</td>
+      <td>2.26</td>
+    </tr>
+  </tbody>
+
+</table>
 
 </body>
 </html>
