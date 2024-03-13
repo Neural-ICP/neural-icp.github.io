@@ -1,4 +1,3 @@
-
 <html>
 <head>
 
@@ -127,7 +126,9 @@
 <br />
 
 <p>
-Aligning a template to 3D human point clouds is a long-standing problem crucial for tasks like animation, reconstruction, and enabling supervised learning pipelines. Recent data-driven methods leverage predicted surface correspondences; however, they are not robust to varied poses, identities, or noise. In contrast, industrial solutions often rely on expensive manual annotations or multi-view capturing systems. Recently, neural fields have shown promising results. Still, their purely data-driven and extrinsic nature does not incorporate any guidance toward the target surface, often resulting in a trivial misalignment of the template registration. Currently, no method can be considered the standard for 3D Human registration, limiting the scalability of downstream applications. In this work, we propose NSR, a pipeline that, for the first time, generalizes and scales across thousands of shapes and more than ten different data sources. Our essential contribution is NICP, an ICP-style self-supervised task tailored to neural fields. NICP takes a few seconds, is self-supervised, and works out of the box on pre-trained neural fields. We combine it with a localized Neural Field trained on a large MoCap dataset. NSR achieves the state of the art over public benchmarks, and the release of its code and checkpoints will provide the community with a powerful tool useful for many downstream tasks like dataset alignments, cleaning, or asset animation.
+Aligning a template to 3D human point clouds is a long-standing problem crucial for tasks like animation, reconstruction, and enabling supervised learning pipelines. Recent data-driven methods leverage predicted surface correspondences; however, they are not robust to varied poses, identities, or noise. In contrast, industrial solutions often rely on expensive manual annotations or multi-view capturing systems. Recently, neural fields have shown promising results. Still, their purely data-driven and extrinsic nature does not incorporate any guidance toward the target surface, often resulting in a trivial misalignment of the template registration. Currently, no method can be considered the standard for 3D Human registration, limiting the scalability of downstream applications. 
+
+In this work, we propose <b>NSR</b>, a pipeline that, for the first time, generalizes and scales across thousands of shapes and more than ten different data sources. Our essential contribution is <b>NICP</b>, an ICP-style self-supervised task tailored to neural fields. NICP takes a few seconds, is self-supervised, and works out of the box on pre-trained neural fields. We combine it with a localized Neural Field trained on a large MoCap dataset. NSR achieves the state of the art over public benchmarks, and the release of its code and checkpoints will provide the community with a powerful tool useful for many downstream tasks like dataset alignments, cleaning, or asset animation.
 </p>
 
 <br />
@@ -136,7 +137,7 @@ Aligning a template to 3D human point clouds is a long-standing problem crucial 
 </div>
 <div style='text-align:center;'>
 
-<h2>How does NICP work?</h2>
+<h2>Rivisiting ICP for Neural Fields</h2>
 <hr>
 
 <br />
@@ -147,7 +148,7 @@ Aligning a template to 3D human point clouds is a long-standing problem crucial 
 <br />
 
 <p>
-NF for human registration. During training (top), the network learns to predict, for every query point in space (black dots), the ordered ground-truth offsets toward the template vertices (colored dots). At inference time (bottom), given a target shape, the template vertices locations are queried. The template vertices are then moved by applying the predicted ordered offsets to them. The process is iterated till convergence. Out-of-distribution data and ruined geometry often result trivial misalignment.
+The key enabler of our generalization is NICP. <b>(1)</b>: At inference time, we query points on the target surface; <b>(2)</b>: For each query point, we select the offset with the minimum norm; <b>(3)</b>: The sum of the retrieved norms for all the vertices is used to tune the backbone NF. \method{} is backbone agnostic and applies to any NF.
 </p>
 
 <br />
