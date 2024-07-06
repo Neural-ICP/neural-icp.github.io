@@ -28,10 +28,11 @@
 <br />
 <br />
 <h1 style="margin-left:-20px; margin-right:-20px;">NICP: Neural ICP for 3D Human Registration at Scale</h1>
-<h2 align="center">Anonymous Submission</h2>
+<h2 align="center">Riccardo Marin<sup>1,2</sup>, Enric Corona<sup>3</sup>, Gerard Pons-Moll<sup>1,2,4</sup></h2>
 <h2 align="center">ECCV 2024</h2>
-<h2 align="center">#7564</h2>
-<h2 align="center">For the paper, supplementary, code, and video, please check the submission files.</h2>
+<h5 align="center"><sup>1</sup>University of Tübingen, <sup>2</sup>Tübingen AI Center, <sup>3</sup>Google Research, <sup>4</sup>Max Planck Institute for Informatics, Saarland Informatics Campus</h5>
+<!-- <h4 align="center"><sup>2</sup>Tübingen AI Center</h4> -->
+
 </b>
 
 <p style="text-align:center; font-size: 18px">
@@ -48,7 +49,7 @@
     font-size: 20px;
     width: 130px;
     font-weight: 600;" 
-    href="">
+    href="https://arxiv.org/abs/2312.14024">
     <span style="font-family: 'Material Icons';font-size:22px;margin:-6px;">description</span> &nbsp;
     Paper</a> &nbsp; &nbsp;
 <a style="position: relative;
@@ -64,7 +65,7 @@
     font-size: 20px;
     width: 130px;
     font-weight: 600;" 
-    href="">
+    href="https://arxiv.org/abs/2312.14024">
     <span style="font-family: 'Material Icons';font-size:22px;margin:-6px;">description</span> &nbsp;
     Supp</a> &nbsp; &nbsp;
 <!-- <a style="position: relative;
@@ -96,7 +97,7 @@
     font-size: 20px;
     width: 130px;
     font-weight: 600;" 
-    href="">
+    href="https://github.com/riccardomarin/NICP">
     <span style="font-family: 'Material Icons';font-size:22px;margin:-6px;">downloading</span> &nbsp;
     Code</a> &nbsp; &nbsp;
 <a style="position: relative;
@@ -112,16 +113,20 @@
     font-size: 20px;
     width: 130px;
     font-weight: 600;" 
-    href="">  
+    href="https://youtu.be/dOGbgkPGX0M">  
     <span style="font-family: 'Material Icons';font-size:22px;margin:-6px;">play_circle_filled</span> &nbsp;
     Video</a>
 <!-- https://materializecss.com/icons.html -->
 </p>
+<div class="imagesrow" style="position: relative;
+    text-align: center;">
+    <img class="row_img" src="./images/logos/normal-reproduction-high-resolution.jpg" alt="European Union" ,="" style="max-width:10%;margin-right: 20px;">
+    <img class="row_img" src="./images/logos/Carl-Zeiss-Stiftung_Logo.png" alt="Carl-Zeiss-Stiftung" ,="" style="max-width:10%;margin-right: 30px;">
+    <img class="row_img" src="./images/logos/ai_center_3.png" alt="Tübingen AI Center" ,="" style="max-width:15%;margin-right: 30px;">
+    <img class="row_img" src="./images/logos/University_Tuebingen.png" alt="University of Tübingen" ,="" style="max-width:15%;margin-right: 30px;">
+    <img class="row_img" src="./images/logos/mpi-logo-new.svg" alt="MPII Saarbrücken" ,="" style="max-width:15%;margin-right: 30px;">
 
-<h3 align="center"><u>TL;DR:</u><br><br>
-We propose Neural ICP, the first self-supervised procedure to improve the generalization of NF registration at inference time.<br>
-We integrate NICP into Neural Scalable Registration (NSR), a ready-to-go and generalizable method for 3D human registration, achieving a new state of the art.<br></h3>
-  
+</div>
 <div>
 <h2>Abstract</h2>
 <hr>
@@ -134,10 +139,21 @@ Aligning a template to 3D human point clouds is a long-standing problem crucial 
 In this work, we propose <b>NSR</b>, a pipeline that, for the first time, generalizes and scales across thousands of shapes and more than ten different data sources. Our essential contribution is <b>NICP</b>, an ICP-style self-supervised task tailored to neural fields. NICP takes a few seconds, is self-supervised, and works out of the box on pre-trained neural fields. We combine it with a localized Neural Field trained on a large MoCap dataset. NSR achieves the state of the art over public benchmarks, and the release of its code and checkpoints will provide the community with a powerful tool useful for many downstream tasks like dataset alignments, cleaning, or asset animation.
 </p>
 
-<br />
-<br />
 
 </div>
+<section class="section" id="BibTeX" style="position: relative;
+    text-align: left;">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{marin24nicp,
+      title = {NICP: Neural ICP for 3D Human Registration at Scale},
+      author={Riccardo Marin and Enric Corona and Gerard Pons-Moll},
+      booktitle={European Conference on Computer Vision},
+      year = {2024},
+  }</code></pre>
+    </div>
+  </section>
+
 <div style='text-align:center;'>
 
 <h2>Rivisiting ICP for Neural Fields</h2>
@@ -160,14 +176,14 @@ The key enabler of our generalization is NICP. <b>(1)</b>: At inference time, we
 </div>
 
 <div style='text-align:center;'>
-<h2>Neural Scalable Registration (NSR) Pipeline: A new state-of-the-art for 3D Human Registration (in only 1 minute)</h2>
+<h2>Neural Scalable Registration (NSR)<br> A new state-of-the-art for 3D Human Registration (in only 1 minute)</h2>
 
 <hr>
 <br />
 
 <p>Our method has been tested on more than ten datasets and more than 5k shapes, consistently surpassing baselines and competitors and taking the lead on public benchmarks. NSR takes around 1 minute to register an input point cloud and shows generalization to challenging cases far from the training set, like humans in clothes, challenging poses, noise or clutter, and many others. Check our paper and supplementary documents for details of our extensive experiments.</p>
 
-
+  
 <div style="display: inline-block;text-align: center; margin:20px;">
 <figure style='display: inline-block'>
 <img src="images/sample_1_input.gif" style="vertical-align: top;height:360;margin-bottom: -30px;">
